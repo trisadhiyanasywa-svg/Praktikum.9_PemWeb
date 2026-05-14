@@ -1,0 +1,1 @@
+<img src="{{ asset('images/a.png') }}" class="img-fluid" alt="Banner" style="width: 100%; display: block;">
