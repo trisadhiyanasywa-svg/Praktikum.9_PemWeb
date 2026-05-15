@@ -1,7 +1,6 @@
 CREATE DATABASE IF NOT EXISTS toko_db;
 USE toko_db;
-DROP TABLE IF EXISTS produk;
-
+DROP TABLE IF EXISTS produk;5
     CREATE TABLE produk (
         id INT PRIMARY KEY,
         nama_produk VARCHAR(100),

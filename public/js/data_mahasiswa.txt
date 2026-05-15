@@ -1,0 +1,61 @@
+CREATE DATABASE IF NOT EXISTS kampus;
+USE kampus;
+DROP TABLE IF EXISTS mahasiswa;
+CREATE TABLE mahasiswa (
+        id INT PRIMARY KEY,
+        nim VARCHAR(10),
+        nama VARCHAR(100),
+        jenis_kelamin ENUM('Laki-laki', 'Perempuan'),
+        jurusan VARCHAR(50),
+        ipk DECIMAL(3,2)
+    );
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (1, '233119', 'Gina Fitri', 'Laki-laki', 'Informatika', '3.9');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (2, '236839', 'Joko Maulana', 'Perempuan', 'Teknik Komputer', '3.65');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (3, '235397', 'Joko Lestari', 'Perempuan', 'Sistem Informasi', '2.95');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (4, '231632', 'Fajar Putra', 'Perempuan', 'Teknik Komputer', '3.58');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (5, '233731', 'Gina Wijaya', 'Laki-laki', 'Teknik Komputer', '2.63');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (6, '239346', 'Joko Fitri', 'Perempuan', 'Teknik Komputer', '2.99');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (7, '234514', 'Dina Fitri', 'Laki-laki', 'Teknik Komputer', '3.27');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (8, '235515', 'Hadi Fitri', 'Perempuan', 'Sistem Informasi', '3.24');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (9, '231117', 'Joko Saputra', 'Laki-laki', 'Informatika', '3.42');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (10, '237649', 'Fajar Fitri', 'Laki-laki', 'Teknik Komputer', '3.9');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (11, '237748', 'Joko Pratama', 'Perempuan', 'Sistem Informasi', '3.34');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (12, '237279', 'Budi Pratama', 'Laki-laki', 'Teknik Komputer', '2.71');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (13, '233621', 'Joko Saputra', 'Laki-laki', 'Teknik Komputer', '3.48');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (14, '239482', 'Gina Pratama', 'Laki-laki', 'Sistem Informasi', '2.81');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (15, '233340', 'Eka Saputra', 'Perempuan', 'Sistem Informasi', '2.6');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (16, '236691', 'Joko Saputra', 'Perempuan', 'Informatika', '2.54');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (17, '231996', 'Hadi Utami', 'Perempuan', 'Sistem Informasi', '3.9');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (18, '233389', 'Eka Lestari', 'Perempuan', 'Sistem Informasi', '3.94');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (19, '236871', 'Ahmad Wijaya', 'Laki-laki', 'Informatika', '2.6');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (20, '239871', 'Dina Utami', 'Laki-laki', 'Teknik Komputer', '2.85');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (21, '233466', 'Ahmad Sari', 'Perempuan', 'Informatika', '2.7');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (22, '231288', 'Fajar Sari', 'Laki-laki', 'Sistem Informasi', '3.08');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (23, '239465', 'Ahmad Lestari', 'Perempuan', 'Informatika', '3.84');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (24, '238963', 'Ahmad Pratama', 'Perempuan', 'Informatika', '3.84');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (25, '231463', 'Intan Maulana', 'Laki-laki', 'Teknik Komputer', '2.85');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (26, '235473', 'Intan Fitri', 'Perempuan', 'Informatika', '2.75');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (27, '238868', 'Gina Utami', 'Laki-laki', 'Informatika', '2.68');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (28, '236861', 'Fajar Maulana', 'Laki-laki', 'Informatika', '3.51');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (29, '235781', 'Gina Pratama', 'Perempuan', 'Informatika', '3.87');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (30, '237084', 'Budi Ananda', 'Laki-laki', 'Teknik Komputer', '2.97');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (31, '236714', 'Joko Wijaya', 'Laki-laki', 'Informatika', '3.31');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (32, '236802', 'Eka Putra', 'Perempuan', 'Teknik Komputer', '3.97');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (33, '239349', 'Ahmad Utami', 'Perempuan', 'Informatika', '2.54');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (34, '236626', 'Budi Maulana', 'Laki-laki', 'Teknik Komputer', '3.02');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (35, '236987', 'Joko Lestari', 'Perempuan', 'Informatika', '2.99');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (36, '233181', 'Hadi Fitri', 'Perempuan', 'Teknik Komputer', '3.76');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (37, '237217', 'Ahmad Sari', 'Perempuan', 'Teknik Komputer', '3.96');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (38, '232949', 'Ahmad Saputra', 'Perempuan', 'Informatika', '2.62');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (39, '233842', 'Budi Sari', 'Laki-laki', 'Teknik Komputer', '3.51');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (40, '238597', 'Budi Pratama', 'Laki-laki', 'Teknik Komputer', '3.05');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (41, '238468', 'Dina Sari', 'Perempuan', 'Sistem Informasi', '2.9');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (42, '234473', 'Dina Utami', 'Laki-laki', 'Teknik Komputer', '3.17');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (43, '232882', 'Eka Putra', 'Laki-laki', 'Teknik Komputer', '3.45');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (44, '235677', 'Gina Wijaya', 'Perempuan', 'Sistem Informasi', '2.88');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (45, '236682', 'Fajar Utami', 'Laki-laki', 'Teknik Komputer', '2.9');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (46, '237771', 'Citra Maulana', 'Laki-laki', 'Informatika', '3.58');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (47, '231269', 'Budi Ananda', 'Laki-laki', 'Informatika', '3.88');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (48, '238775', 'Eka Utami', 'Perempuan', 'Informatika', '3.56');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (49, '239968', 'Ahmad Wijaya', 'Laki-laki', 'Sistem Informasi', '3.78');
+INSERT INTO mahasiswa (id, nim, nama, jenis_kelamin, jurusan, ipk) VALUES (50, '238724', 'Fajar Pratama', 'Laki-laki', 'Teknik Komputer', '3.51');
