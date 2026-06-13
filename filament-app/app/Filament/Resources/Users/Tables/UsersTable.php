@@ -1,37 +1,28 @@
 <?php
 
-namespace App\Filament\Resources\Trainings\Tables;
+namespace App\Filament\Resources\Users\Tables;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
-class TrainingsTable
+class UsersTable
 {
     public static function configure(Table $table): Table
     {
         return $table
             ->columns([
-                TextColumn::make('jenisTraining.nama_jenis')
-                    ->label('Jenis Training')
-                    ->numeric()
+                TextColumn::make('name')
+                    ->searchable(),
+                TextColumn::make('email')
+                    ->label('Email address')
+                    ->searchable(),
+                TextColumn::make('email_verified_at')
+                    ->dateTime()
                     ->sortable(),
-                TextColumn::make('nama_training')
-                    ->searchable(),
-                TextColumn::make('penyelenggara')
-                    ->searchable(),
-                TextColumn::make('tanggal_training')
-                    ->date()
-                    ->sortable(),
-                TextColumn::make('lokasi')
-                    ->searchable(),
-                TextColumn::make('pegawais.nama')
-                    ->label('Peserta')
-                    ->badge()
-                    ->separator(',')
-                    ->wrap(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -40,11 +31,19 @@ class TrainingsTable
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+                TextColumn::make('profile_photo_path')
+                    ->searchable(),
+                TextColumn::make('designation')
+                    ->searchable(),
+                TextColumn::make('bio')
+                    ->searchable(),
+                IconColumn::make('is_admin')
+                    ->boolean(),
             ])
             ->filters([
                 //
             ])
-            ->recordActions([ 
+            ->recordActions([
                 EditAction::make(),
             ])
             ->toolbarActions([
